@@ -1,12 +1,12 @@
-# Cod reducere Philips — fetch automat de pe shopilo.it
+# Codice sconto Philips, recupero automatico da shopilo.it
 
-Modul Python pentru fetch automat de **coduri de reducere Philips** de pe [shopilo.it](https://shopilo.it/magazin/philips.it). Returneaza **cupoane Philips** active in format JSON, gata de integrat intr-un bot Telegram, extensie de browser sau orice alt tool.
+Modulo Python per il recupero automatico di **codici sconto Philips** da [shopilo.it](https://shopilo.it/negozi/philips.it). Restituisce **coupon Philips** attivi in formato JSON, pronto per l'integrazione in un bot Telegram, estensione del browser o qualsiasi altro strumento.
 
 **Pagina live:** [shopilo-it.github.io/codice-sconto-philips](https://shopilo-it.github.io/codice-sconto-philips/)
 
 ![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue) ![License MIT](https://img.shields.io/badge/license-MIT-green)
 
-## Instalare
+## Installazione
 
 ```bash
 pip install requests beautifulsoup4
@@ -15,7 +15,7 @@ cd codice-sconto-philips
 python fetch.py
 ```
 
-## Output exemplu
+## Output di esempio
 
 ```json
 [
@@ -25,38 +25,38 @@ python fetch.py
     "discount": "15%",
     "description": "15% di sconto su prodotti per la cura personale",
     "expires": "2026-10-10",
-    "source": "https://shopilo.it/magazin/philips.it"
+    "source": "https://shopilo.it/negozi/philips.it"
   }
 ]
 ```
 
-## Cupoane Philips disponibile
+## Coupon Philips disponibili
 
-| Reducere | Descriere | Sursa |
+| Sconto | Descrizione | Fonte |
 |----------|-----------|-------|
-| 15% | 15% di sconto su prodotti per la cura personale | [shopilo.it](https://shopilo.it/magazin/philips.it) |
+| 15% | 15% di sconto su prodotti per la cura personale | [shopilo.it](https://shopilo.it/negozi/philips.it) |
 
-Codurile active: **[shopilo.it/magazin/philips.it](https://shopilo.it/magazin/philips.it)**
+Codici attivi: **[shopilo.it/negozi/philips.it](https://shopilo.it/negozi/philips.it)**
 
-## Intrebari frecvente
+## Domande frequenti
 
-### Cum folosesc un cod de reducere Philips?
-Copiaza codul din tabelul de mai sus sau de pe [shopilo.it](https://shopilo.it/magazin/philips.it), adauga produsele in cos pe Philips, si introdu codul la checkout in campul dedicat.
+### Come utilizzo un codice sconto Philips?
+Copia il codice dalla tabella qui sopra o da [shopilo.it](https://shopilo.it/negozi/philips.it), aggiungi i prodotti al carrello su Philips e inserisci il codice al checkout nel campo dedicato.
 
-### Cat timp sunt valabile cupoanele Philips?
-Fiecare cupon are data de expirare afisata in coloana "Expira". Scriptul fetch.py returneaza doar cupoanele active la momentul rularii.
+### Quanto durano i coupon Philips?
+Ogni coupon ha una data di scadenza indicata nella colonna "Scadenza". Lo script fetch.py restituisce solo i coupon attivi al momento dell'esecuzione.
 
-### Unde gasesc cele mai noi voucher-uri Philips?
-Pagina [shopilo.it/magazin/philips.it](https://shopilo.it/magazin/philips.it) este actualizata zilnic cu cele mai noi cod reducere Philips, voucher Philips si cupon promotional Philips.
+### Dove trovo i voucher Philips piu recenti?
+La pagina [shopilo.it/negozi/philips.it](https://shopilo.it/negozi/philips.it) viene aggiornata quotidianamente con i codici sconto Philips, voucher Philips e coupon promozionali Philips piu recenti.
 
-### Codul nu functioneaza. Ce fac?
-Verifica data de expirare si conditiile (valoare minima cos, produse eligibile). Unele coduri sunt valabile doar in aplicatia mobila sau pentru prima comanda.
+### Il codice non funziona. Cosa faccio?
+Verifica la data di scadenza e le condizioni (importo minimo del carrello, prodotti idonei). Alcuni codici sono validi solo nell'app mobile o per il primo ordine.
 
-## Despre Philips
+## Informazioni su Philips
 
-Philips este unul dintre magazinele online populare. Gasesti pe [shopilo.it](https://shopilo.it/magazin/philips.it) cele mai bune cod reducere Philips, cupoane Philips verificate si voucher Philips active, actualizate zilnic.
+Philips e uno dei negozi online piu popolari. Su [shopilo.it](https://shopilo.it/negozi/philips.it) trovi i migliori codici sconto Philips, coupon Philips verificati e voucher Philips attivi, aggiornati ogni giorno.
 
-## Instalare npm
+## Installazione npm
 
 ```bash
 npm install codice-sconto-philips
@@ -67,6 +67,6 @@ const { fetchCoupons } = require('codice-sconto-philips');
 fetchCoupons().then(data => console.log(data));
 ```
 
-## Licenta
+## Licenza
 
-MIT — date sursa de pe [shopilo.it](https://shopilo.it)
+MIT, dati prelevati da [shopilo.it](https://shopilo.it)
